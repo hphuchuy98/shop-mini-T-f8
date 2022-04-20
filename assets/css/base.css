@@ -1,0 +1,41 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+*{
+    box-sizing: inherit;  /*Kế thừa box gần nhất */
+}
+
+html {
+    font-size: 62.5%;  /* 10px (100% = 16px) */
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;  /*sans-serif: font không có chân */
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1660px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;  /* Những thẻ nằm trong class này đều nằm trên 1 hàng ngang*/
+    flex-wrap: wrap; /* Nhảy xuống hàng khi độ dài vượt quá class này*/
+}
+
+/* ------- Animation -------*/ 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
